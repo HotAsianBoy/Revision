@@ -19,3 +19,5 @@ while guesses_left:
             answer = int(input("That's too high!\n Try again! :"))
     else:
         print("You got it in", count, "guesses! Well done!")
+        break
+
