@@ -1,5 +1,5 @@
 def integer_checker(question):
-    error = "\nSorry, you must enter an integer\n"
+    error = "\nSorry, you must enter an actual integer!\n"
     number = ""
     while not number:
         try:
