@@ -15,7 +15,7 @@ residential_factor = 0.25
 
 
 while True:
-    building_type = input("What type of building is this? \nEnter 'C' for"
+    building_type = input("What type of building is this? \nEnter 'C' for "
                           "commercial and 'R' for residential"
                           " or 'X' to exit!: ").upper()
     if building_type == "X":
@@ -30,24 +30,18 @@ while True:
     foundation_width = number_checker("Enter the width of the required "
                                       "slab - in meters!: ")
     area = foundation_length * foundation_width
-
-
     if building_type == "C":
         required_volume = area * commercial_factor
     else:
         required_volume = area * residential_factor
 
     required_volume = round(required_volume, 2)
-    print(f"The volume of concrete needed for this building is"
+    print(f"The volume of concrete needed for this building is "
           f" {required_volume} cubic meters!\n")
     daily_volume += required_volume
     break
 
-print(f"\nThe total volume of concrete required today will be {daily_volume}"
+print(f"\nThe total volume of concrete required today will be {daily_volume} "
       f"cubic meters!")
 print()
 print("Farewell!")
-
-
-
-
